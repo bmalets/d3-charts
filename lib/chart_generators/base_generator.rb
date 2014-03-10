@@ -1,16 +1,20 @@
 class BaseGenerator
 
+  # generate assets for chart ( .js and .css )
+  # and put them into rails assets path
   def add_assets( f_name, code )
     d_path = create_dir( f_name )
     f_path = file_path( d_path, f_name )
     make_file( f_path, code )
   end
 
+  # get chart's js-code form template
   def js_code( element, data )
     erb = ERB.new( temp_js )
     erb.result( binding )
   end
 
+  # get chart's css-code form template
   def css_code( element )
     erb = ERB.new( temp_css )
     erb.result( binding )      
