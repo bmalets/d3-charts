@@ -4,6 +4,7 @@ module D3
       initializer "chart_helpers" do
     	  ActionView::Base.send :include, BarChart
         ActionView::Base.send :include, HistogramChart
+        ActionView::Base.send :include, PieChart
       end
   	end
   end
