@@ -26,36 +26,35 @@ Then add it to your manifest file, most probably at `app/assets/javascripts/appl
 
 ## Usage
 
-Here you will find View Helpers for the following types of charts:
+```ruby
 
-1. Bar chart
+	<!-- common charts -->
+	
+	<h1> Line Chart </h1>
+	<%= line_chart( [1,9,6,8,10] ) %>
 
-* Horizontal
 
-e.g. [http://bl.ocks.org/mbostock/raw/7322386/](http://bl.ocks.org/mbostock/raw/7322386/) 
+	<h1> Pie Chart </h1>
+	<%= pie_chart( 'http://bl.ocks.org/mbostock/raw/3887235/data.csv' ) %>
 
-<code>horizontal_bar_chart( data, element='.horizontal_bar_chart' )</code>
 
-  <%= horizontal_bar_chart( [1,2,3,4,5] ) %>
+        <h1> Histogram Chart </h1>
+	<%= histogram_chart( [ 	0.3868526664824069,  0.4917571016462725, 
+					   	   	0.38783356112423817, 0.5401234418737314, 
+					   		0.41510852382870295, 0.46538050029079203 ] ) %>
 
-* Vertical
+	<h1> Vertical Bar Chart </h1>
+	<%= vertical_bar_chart( 'http://bl.ocks.org/mbostock/raw/3885304/data.tsv' ) %>
 
-e.g. [http://bl.ocks.org/mbostock/raw/3885304/](http://bl.ocks.org/mbostock/raw/3885304/) 
+	<h1> Horizontal Bar Chart </h1>
+	<%= horizontal_bar_chart( [1,2,3,4,5] ) %>
 
-<code>vertical_bar_chart( data_tsv, element='.vertical_bar_chart' )</code>
+	<!-- less common charts -->
 
-  <%= vertical_bar_chart( 'http://bl.ocks.org/mbostock/raw/3885304/data.tsv', 
-                          '.vertical_bar_chart' ) %>
-
-2. Histogram
-
-e.g. [http://bl.ocks.org/mbostock/raw/3048450/](http://bl.ocks.org/mbostock/raw/3048450/)
-
-<code>histogram_chart( data, element='.histogram_chart' )</code>
-
-  <%= histogram_chart( [ 0.3868526664824069,  0.4917571016462725, 
-	                       0.38783356112423817, 0.5401234418737314, 
-                         0.41510852382870295, 0.46538050029079203 ], '.histogram_chart' ) %>
+	<h1> Bubble Chart </h1>
+	<%= bubble_chart( 'http://bl.ocks.org/mbostock/raw/4063269/flare.json' ) %>
+	
+```
 
 =========
 to be continued... :)                         
