@@ -5,6 +5,7 @@ module D3
     	  ActionView::Base.send :include, BarChart
         ActionView::Base.send :include, HistogramChart
         ActionView::Base.send :include, PieChart
+        ActionView::Base.send :include, LineChart
       end
   	end
   end
