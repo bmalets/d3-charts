@@ -1,6 +1,5 @@
 module HistogramChart
 
-    # http://bl.ocks.org/mbostock/3048450
     def histogram_chart( data, element='.histogram_chart' )
       HistogramChartGenerator.new.generate( element, data )
       content_tag( :div, '', class: element[1..-1] )

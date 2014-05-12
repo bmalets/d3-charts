@@ -1,6 +1,5 @@
 module PieChart
 
-    # http://bl.ocks.org/mbostock/raw/3887235/
     def pie_chart( data_url, element='.pie_chart' )
       PieChartGenerator.new.generate( element, data_url )
       content_tag( :div, '', class: element[1..-1] )
