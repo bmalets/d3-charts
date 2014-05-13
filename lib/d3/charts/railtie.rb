@@ -11,6 +11,7 @@ module D3
         ActionView::Base.send :include, BubbleChart
         ActionView::Base.send :include, PolarAreaDiagram
         ActionView::Base.send :include, RadarChart
+        ActionView::Base.send :include, Streamgraph
       end
   	end
   end

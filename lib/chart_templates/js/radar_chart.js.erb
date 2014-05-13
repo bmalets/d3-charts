@@ -229,7 +229,7 @@ var colorscale = d3.scale.category10();
 var LegendOptions = ['Smartphone','Tablet'];
 
 //Data
-d3.json("http://0.0.0.0:3000/radar_chart.json", function(error, d) {
+d3.json("<%= data %>", function(error, d) {
 	//Options for the Radar chart, other than default
 	var mycfg = {
 	  w: w,
