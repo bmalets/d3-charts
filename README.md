@@ -26,34 +26,41 @@ Then add it to your manifest file, most probably at `app/assets/javascripts/appl
 
 ## Usage
 
-```ruby
+```
 
-	<!-- common charts -->
-	
-	<h1> Line Chart </h1>
-	<%= line_chart( [1,9,6,8,10] ) %>
+Less-Common Charts:
 
+	Streamgraph	
+	<%= streamgraph("http://0.0.0.0:3000/streamgraph.csv") %>
 
-	<h1> Pie Chart </h1>
-	<%= pie_chart( 'http://bl.ocks.org/mbostock/raw/3887235/data.csv' ) %>
+	Radar Chart
+	<%= radar_chart("http://0.0.0.0:3000/radar_chart.json") %>
 
+	Polar Area Diagram
+	<%= polar_area_diagram([1,2,3,4,5]) %>
 
-        <h1> Histogram Chart </h1>
-	<%= histogram_chart( [ 	0.3868526664824069,  0.4917571016462725, 
-					   	   	0.38783356112423817, 0.5401234418737314, 
-					   		0.41510852382870295, 0.46538050029079203 ] ) %>
+	Bubble Chart
+	<%= bubble_chart( "http://0.0.0.0:3000/bubble_chart.json" ) %>
 
-	<h1> Vertical Bar Chart </h1>
-	<%= vertical_bar_chart( 'http://bl.ocks.org/mbostock/raw/3885304/data.tsv' ) %>
+Common Charts:
 
-	<h1> Horizontal Bar Chart </h1>
+	Line Chart
+	<%= line_chart( [1,2,3,4,5] ) %>
+
+        Pie Chart
+	<%= pie_chart( "http://0.0.0.0:3000/pie_chart.csv" ) %>
+
+	Histogram Chart
+	<%= histogram_chart( [ 0.3868526664824069, 0.4917571016462725, 
+		               0.38783356112423817, 0.5401234418737314, 
+			       0.41510852382870295, 0.46538050029079203 ] ) %>
+
+	Vertical Bar Chart
+	<%= vertical_bar_chart( "http://0.0.0.0:3000/vertical_bar_chart.tsv" ) %>
+
+	Horizontal Bar Chart
 	<%= horizontal_bar_chart( [1,2,3,4,5] ) %>
 
-	<!-- less common charts -->
-
-	<h1> Bubble Chart </h1>
-	<%= bubble_chart( 'http://bl.ocks.org/mbostock/raw/4063269/flare.json' ) %>
-	
 ```
 
 =========
