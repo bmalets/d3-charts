@@ -10,6 +10,7 @@ module D3
         # less common charts
         ActionView::Base.send :include, BubbleChart
         ActionView::Base.send :include, PolarAreaDiagram
+        ActionView::Base.send :include, RadarChart
       end
   	end
   end
