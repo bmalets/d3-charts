@@ -12,6 +12,7 @@ module D3
         ActionView::Base.send :include, PolarAreaDiagram
         ActionView::Base.send :include, RadarChart
         ActionView::Base.send :include, Streamgraph
+        ActionView::Base.send :include, Treemap
       end
   	end
   end
