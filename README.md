@@ -30,6 +30,9 @@ Then add it to your manifest file, most probably at `app/assets/javascripts/appl
 
 Less-Common Charts:
 
+	Treemap
+	<%= treemap("http://0.0.0.0:3000/treemap.json") %>
+
 	Streamgraph	
 	<%= streamgraph("http://0.0.0.0:3000/streamgraph.csv") %>
 
@@ -47,7 +50,7 @@ Common Charts:
 	Line Chart
 	<%= line_chart( [1,2,3,4,5] ) %>
 
-        Pie Chart
+	Pie Chart
 	<%= pie_chart( "http://0.0.0.0:3000/pie_chart.csv" ) %>
 
 	Histogram Chart
