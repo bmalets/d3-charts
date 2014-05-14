@@ -1,7 +1,7 @@
-module HistogramChart
+module Histogram
 
-    def histogram_chart( data, element='.histogram_chart' )
-      HistogramChartGenerator.new.generate( element, data )
+    def histogram( data, element='.histogram' )
+      HistogramGenerator.new.generate( element, data )
       content_tag( :div, '', class: element[1..-1] )
     end
 
