@@ -66,7 +66,7 @@ Common Charts:
 
 ```
 
- You can see how it works [here](http://fathomless-headland-8678.herokuapp.com).
+ You can see how it works [http://charticus.herokuapp.com](http://charticus.herokuapp.com).
 
 =========
 to be continued... :)                         
