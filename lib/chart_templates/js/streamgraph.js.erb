@@ -10,7 +10,7 @@ function chart(csvpath) {
   var format = d3.time.format("%m/%d/%y");
 
   var margin = {top: 20, right: 40, bottom: 30, left: 30};
-  var width  = document.body.clientWidth - margin.left - margin.right;
+  var width  = parseInt(d3.select(".streamgraph_body").style("width")) - margin.left - margin.right;
   var height = 400 - margin.top - margin.bottom;
 
   var tooltip = d3.select("<%= element %>_body")
