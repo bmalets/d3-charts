@@ -44,7 +44,7 @@ class BaseGenerator
   def make_file( f_path, code )
     File.open( f_path,'w' ) do |f| 
       f.write( code ) 
-    end unless File.exists?( f_path )
+    end #unless File.exists?( f_path )
   end
 
   def temp_js
