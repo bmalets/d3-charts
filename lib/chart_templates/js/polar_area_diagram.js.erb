@@ -169,7 +169,7 @@ var draw = function (val) {
 
 var drawBars = function(val) {
     var groups, bar;
-    pie = d3.layout.pie().value(function(d) { return d; }).sort(null);
+    poler_pie = d3.layout.pie().value(function(d) { return d; }).sort(null);
     d = [];
     for(i = 0; i<timeseries[val][0].length; i++) { d.push(1); }
 
@@ -187,7 +187,7 @@ var drawBars = function(val) {
         .outerRadius( function(d,i) { return radius( timeseries[val][0][i] ); });
         
     arcs = groups.selectAll(".series g.arc")
-        .data(pie)
+        .data(poler_pie)
         .enter()
             .append("g")
                 .attr("class", "polar_attr");
