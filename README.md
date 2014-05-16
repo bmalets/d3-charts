@@ -40,7 +40,7 @@ Less-Common Charts:
 	<%= radar_chart("http://0.0.0.0:3000/radar_chart.json") %>
 
 	Polar Area Diagram
-	<%= polar_area_diagram([1,2,3,4,5]) %>
+	<%= polar_area_diagram( "http://0.0.0.0:3000/polar_area_diagram.json" ) %>
 
 	Bubble Chart
 	<%= bubble_chart( "http://0.0.0.0:3000/bubble_chart.json" ) %>
