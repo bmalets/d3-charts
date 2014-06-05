@@ -1,5 +1,5 @@
 module D3
   module Charts
-    VERSION = "4.5.1"
+    VERSION = "1.0.0"
   end
 end
