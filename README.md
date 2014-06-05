@@ -67,6 +67,8 @@ Common Charts:
 ```
 
  You can see how it works [http://charticus.herokuapp.com](http://charticus.herokuapp.com).
+ 
+ If you have some ideas or find problem, I'll be very happy to see you'r pull request or ussue!
 
 =========
 to be continued... :)                         
