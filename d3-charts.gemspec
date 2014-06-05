@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name        = "d3-charts"
   s.version     = D3::Charts::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Bogdan Malets"]
+  s.authors     = ["bmalets"]
   s.email       = ["b.malets@gmail.com"]
   s.homepage    = "https://github.com/bmalets/d3-charts"
   s.summary     = "D3 for Rails Asset Pipeline"
