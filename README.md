@@ -71,4 +71,6 @@ Common Charts:
  If you have some ideas or find problem, I'll be very happy to see you'r pull request or ussue!
 
 =========
-to be continued... :)                         
+to be continued... :) 
+Do not hesitate to be included into development. I'm waiting for your pull requests!
+                        
