@@ -1,4 +1,4 @@
-#d3-charts [![Gem Version](https://badge.fury.io/rb/d3-charts.svg)](http://badge.fury.io/rb/d3-charts)
+#d3-charts [![Gem Version](https://badge.fury.io/rb/d3-charts.svg)](http://badge.fury.io/rb/d3-charts) [![Code Climate](https://codeclimate.com/github/bmalets/d3-charts/badges/gpa.svg)](https://codeclimate.com/github/bmalets/d3-charts)
 
 Create your charts easy using d3.js library.
 This gem provides an opportunity to create [any](http://en.wikipedia.org/wiki/Chart#Types_of_charts) chart more easily!
