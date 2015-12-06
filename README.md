@@ -1,4 +1,4 @@
-#d3-charts
+#d3-charts [![Gem Version](https://badge.fury.io/rb/d3-charts.svg)](http://badge.fury.io/rb/d3-charts) [![Code Climate](https://codeclimate.com/github/bmalets/d3-charts/badges/gpa.svg)](https://codeclimate.com/github/bmalets/d3-charts)
 
 Create your charts easy using d3.js library.
 This gem provides an opportunity to create [any](http://en.wikipedia.org/wiki/Chart#Types_of_charts) chart more easily!
@@ -26,49 +26,62 @@ Then add it to your manifest file, most probably at `app/assets/javascripts/appl
 
 ## Usage
 
+#####Less-Common Charts:
+
+- Treemap
 ```
-
-Less-Common Charts:
-
-	Treemap
 	<%= treemap("http://0.0.0.0:3000/treemap.json") %>
-
-	Streamgraph	
+```
+- Streamgraph	
+```
 	<%= streamgraph("http://0.0.0.0:3000/streamgraph.csv") %>
-
-	Radar Chart
+```
+- Radar Chart
+```
 	<%= radar_chart("http://0.0.0.0:3000/radar_chart.json") %>
-
-	Polar Area Diagram
+```
+- Polar Area Diagram
+```
 	<%= polar_area_diagram( "http://0.0.0.0:3000/polar_area_diagram.json" ) %>
-
-	Bubble Chart
+```
+- Bubble Chart
+```
 	<%= bubble_chart( "http://0.0.0.0:3000/bubble_chart.json" ) %>
+```
+#####Common Charts:
 
-Common Charts:
-
-	Line Chart
+- Line Chart
+```
 	<%= line_chart( [1,2,3,4,5] ) %>
-
-	Pie Chart
+```
+- Pie Chart
+```
 	<%= pie_chart( "http://0.0.0.0:3000/pie_chart.csv" ) %>
-
-	Histogram Chart
+```
+- Histogram Chart
+```
 	<%= histogram_chart( [ 0.3868526664824069, 0.4917571016462725, 
 		               0.38783356112423817, 0.5401234418737314, 
 			       0.41510852382870295, 0.46538050029079203 ] ) %>
-
-	Vertical Bar Chart
+```
+- Vertical Bar Chart
+```
 	<%= vertical_bar_chart( "http://0.0.0.0:3000/vertical_bar_chart.tsv" ) %>
-
-	Horizontal Bar Chart
+```
+- Horizontal Bar Chart
+```
 	<%= horizontal_bar_chart( [1,2,3,4,5] ) %>
-
 ```
 
  You can see how it works [http://charticus.herokuapp.com](http://charticus.herokuapp.com).
  
  If you have some ideas or find problem, I'll be very happy to see you'r pull request or ussue!
 
-=========
-to be continued... :)                         
+## TODO
+1. tests :)
+2. other charts
+3. refactoring
+
+to be continued... :smirk_cat:
+
+Do not hesitate to be included into development. I'm waiting for your pull requests!
